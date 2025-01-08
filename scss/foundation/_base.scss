@@ -1,0 +1,41 @@
+@use "global/" as global;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--ff-main);
+  color: var(--color-text);
+  line-height: 1.5;
+  background: #fff;
+  text-size-adjust: 100%;
+    // -webkit-text-size-adjust: 100%;
+    // -webkit-font-smoothing: antialiased;
+  *:lang(en){
+    font-family: var(--ff-en);
+  }
+  &:has(dialog[open]) {
+    overflow: hidden;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+summary {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
