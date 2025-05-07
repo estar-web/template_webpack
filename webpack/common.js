@@ -5,13 +5,10 @@ module.exports = {
   mode: 'development',
   entry: './_src/index.js',
   output: {
+    clean: {
+      keep: /style\.css$/, // style.cssファイルを保持する
+    },
     path: paths.dist,
-    filename: `${paths.assets.js}/bundle.js`,
     assetModuleFilename: `${paths.assets.images}/[name][ext]`,
   },
-  plugins: [
-    new CleanWebpackPlugin({
-      cleanOnceBeforeBuildPatterns: ['**/*', '!style.css'],
-    }),
-  ]
 };
