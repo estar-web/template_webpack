@@ -73,11 +73,6 @@ module.exports = {
       filename: `${paths.assets.css}/style.css`,
       ignoreOrder: true,
     }),
-    new StylelintPlugin(
-      {
-        // fix: true,
-      }
-    ),
     {
       apply: (compiler) => {
         compiler.hooks.afterEnvironment.tap('ScssWatcher', () => {

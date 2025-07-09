@@ -55,7 +55,7 @@ module.exports = {
         },
       ],
     }),
-    
+
     // WebP変換後に元のPNG/JPEGファイルを削除
     // 別のアプローチでFileManagerPluginを使用
     new FileManagerPlugin({

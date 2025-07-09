@@ -2,7 +2,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const paths = require('./path');
 
 module.exports = {
-  mode: 'development',
+  mode: 'production',
   entry: './_src/index.js',
   output: {
     clean: {
@@ -11,4 +11,9 @@ module.exports = {
     path: paths.dist,
     assetModuleFilename: `${paths.assets.images}/[name][ext]`,
   },
+  plugins: [
+    new CleanWebpackPlugin({
+      cleanOnceBeforeBuildPatterns: ['**/*', '!style.css'],
+    }),
+  ]
 };
