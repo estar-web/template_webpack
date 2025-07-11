@@ -43,7 +43,7 @@ $breakpoints : (
   's': '(width <= 575.98px)',
   'm': ' (width <= 767.98px)',
   'l': '(width <= 991.98px)',
-  'xl': '(width <= #{$m-inner - 0.02px})',
+  'xl': '(width <= 1198.98px)',
   'xxl': '(width <= 1399.98px)',
   //SPファーストのキー値
   // "xxl":"screen and (width >= 1400px)",

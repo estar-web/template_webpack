@@ -1,4 +1,4 @@
-@use "global/" as *;
+@use "../global/" as *;
 
 @mixin inner($width: var(--inner-xl), $padding: var(--padding)) {
   width: min(100%,calc($width + $padding * 2));
